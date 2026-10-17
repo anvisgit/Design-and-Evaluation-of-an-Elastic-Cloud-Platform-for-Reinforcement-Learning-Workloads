@@ -1,0 +1,11 @@
+[project]
+name = "rl-platform"
+version = "0.1.0"
+description = "RL training and experimentation framework on AWS"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = [".", "lambdas", "worker", "infra", "cli"]
+testpaths = ["tests/unit", "tests/integration"]
+markers = ["e2e: needs a deployed stack (RL_API_URL, RL_ID_TOKEN)"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::UserWarning"]

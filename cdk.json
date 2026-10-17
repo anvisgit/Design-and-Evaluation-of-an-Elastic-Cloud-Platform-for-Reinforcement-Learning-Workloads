@@ -1,0 +1,15 @@
+{
+  "app": "python3 infra/app.py",
+  "context": {
+    "stage": "dev",
+    "owner_email": "",
+    "slack_webhook_url": "",
+    "max_workers": 5,
+    "max_active_runs_per_user": 5,
+    "monthly_budget_usd": 50,
+    "instance_type": "c6i.xlarge",
+    "use_spot": true,
+    "image_tag": "latest",
+    "@aws-cdk/aws-lambda:recognizeLayerVersion": true
+  }
+}

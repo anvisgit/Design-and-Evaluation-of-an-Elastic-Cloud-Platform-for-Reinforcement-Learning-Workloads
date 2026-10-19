@@ -66,6 +66,16 @@ python cli/rlctl.py download <run_id> model
 streamlit run dashboard/app.py              # experiments, run table, reward overlays, artifact links
 ```
 
+To preview the dashboard without deploying or configuring AWS, start it and enable
+**Demo mode (sample data)** in the sidebar:
+
+```bash
+streamlit run dashboard/app.py
+```
+
+Demo mode displays sample experiments, runs, and metric curves. Artifact downloads and run cancellation
+are disabled; use the normal login flow against a deployed stack to test those actions.
+
 ### REST API (all routes except `/health` need `Authorization: <Cognito ID token>`)
 | Method & path | Purpose |
 |---|---|

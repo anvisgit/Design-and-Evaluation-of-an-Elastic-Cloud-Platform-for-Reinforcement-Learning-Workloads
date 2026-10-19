@@ -1,0 +1,6 @@
+stable-baselines3==2.5.0
+gymnasium[box2d]==1.0.0
+numpy<2.2
+boto3>=1.34
+pydantic>=2.6
+imageio>=2.34

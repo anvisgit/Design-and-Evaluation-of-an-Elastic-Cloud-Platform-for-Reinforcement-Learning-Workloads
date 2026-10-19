@@ -1,0 +1,13 @@
+{
+  "experiment_id": "REPLACE_WITH_EXPERIMENT_ID",
+  "name": "ppo_cartpole_baseline",
+  "algo": "PPO",
+  "env_id": "CartPole-v1",
+  "seed": 42,
+  "total_timesteps": 200000,
+  "n_envs": 4,
+  "hyperparams": {"learning_rate": 0.0003, "gamma": 0.99, "n_steps": 2048, "batch_size": 64,
+                  "clip_range": 0.2, "ent_coef": 0.0, "policy": "MlpPolicy"},
+  "logging": {"metrics_every_steps": 2000, "checkpoint_every_steps": 25000, "eval_every_steps": 25000, "eval_episodes": 10},
+  "resources": {"instance_class": "cpu", "max_runtime_minutes": 120}
+}
